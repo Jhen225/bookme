@@ -5,15 +5,28 @@ export default class Home extends Component{
         return(
          
             <div class="container">
-              <div class="split left">
-                <h2>Looking For A Fun Night Out?</h2>
-                <input type="text" name="state" id="state"/>
-                <input type="text" name="city" id="city"/>
-                <input type="text" name="zipcode" id="zipcode"/>                
+              <div class="nav-container">
+                <nav id="navbar">
+                  <ul>
+                    <li><a href="eventhosting">Create Event</a></li>
+                    <li><a href="register">Sign Up</a></li>
+                    <li><a href="login">Login</a></li>
+                  </ul>
+                </nav>
               </div>
-              <div class="split right">
-                <h2>Hosting The Hottest Events Just Got Easier!</h2>
-                <input type="button" value="Register"/>
+              <div id="hero-image">
+                <form id="hero-form" action="">
+                    <h2>Find Your Crowd</h2>  
+                    <div>            
+                      <input type="text" name="eventInput" placeholder="Search Events" id="event_input"/>
+                      <input type="text" name="locationInput" placeholder="City/State or Zip" id="location_input"/>
+                      <input type="text" name="dateInput" placeholder="Dates" id="date_input"/>
+                      <button type="submit" id="location_submit">Enter</button>
+                    </div>
+                  </form>
+              </div>
+              <div class="content">
+
               </div>
             </div>
           
